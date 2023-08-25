@@ -1,0 +1,40 @@
+
+
+.title{
+    width: 120px;
+    padding: 0px;
+
+}
+// .navBar{
+//     z-index: 1;
+//     background-color: white;
+//     color: black;
+//     display: flex;
+//     width: 100%;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0 2rem;
+//     margin: 0;
+//     position: fixed;
+//     border-color: white;
+//     border-bottom: 1mm solid black;
+
+// }
+.navBar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    font-size: 30px;
+
+}
+
+.navBar a{
+    color: inherit;
+    text-decoration: none;
+}
+
+

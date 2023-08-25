@@ -1,0 +1,13 @@
+:root{
+    --body_background: white;
+    --body_color : black;
+    --text_color: black;
+    --text_background:white;
+
+}
+[data-theme="dark"]{
+    --body_background:rgb(0, 0, 0,.1);
+    --body_color: rgb(0, 0, 0,.92);
+    --text_color: white;
+    --text_background:RGBA(255, 255, 255, 0.36);
+}

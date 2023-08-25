@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.homePage{
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    // border: 5px SOLID WHITE;
+    
+}
+
+.introduction{
+    margin-top: 420px;
+    // padding-top: 300px;
+    background-color: RGBA(255, 255, 255, 0.36);
+    padding: 10px 10px; 
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Sweet Darling', sans-serif;
+
+}
+.layout{
+    color: white;
+}
+.profile{
+    align-items: center;
+    text-align: left;
+    // display: inline;
+    vertical-align: middle;
+    padding: 15PX;
+}
+img{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+}
+.name{
+    color: white;
+    font-size: 16px;
+    text-align: right;
+    
+    font-family: 'Sweet Darling', sans-serif;
+    vertical-align: middle;
+    
+}
+.align{
+    width: 60%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Sweet Darling', sans-serif;
+}
+
+.aboutSection{
+    color: white;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    p{
+        padding: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
