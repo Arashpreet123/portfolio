@@ -23,6 +23,7 @@ const Home = () => {
             
             <div className='model'>
                 <Model></Model>
+                <NavBar></NavBar>
             </div>
             <div className = "themeChange">
                 <button onClick={setLightMode}>

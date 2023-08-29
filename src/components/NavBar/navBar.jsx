@@ -1,31 +1,29 @@
 import './navBar.scss';
-import logo from "C:/Users/pandh/GitHub/port/src/assets/ap-logo.png"
+import {FaBars, FaTimes} from "react-icons/fa"
+import { useRef } from 'react';
 const NavBar = () => {
+    const navRef = useRef();
+    const showNavBar = () => {
+        navRef.current.classList.toggle("responsive_nav");
+    }
     return (
         <>
-        <div>
-            <nav className="navBar">
-                <img src = {logo} className="title"></img>
-                   
-                <ul>
-                    <li>
-                        <a href="projects">Home</a>
-                    </li>
-                    <li>
-                        <a href="projects">About</a>
-                    </li>
-                    <li>
-                        <a href="projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="projects">Blog</a>
-                    </li>
-                    <li>
-                        <a href="projects">Contact</a>
-                    </li>
-                </ul>
+        <header>
+            <h3>LOGO</h3>
+            <nav className="navBar" ref = {navRef}>                   
+                <a href="projects">Home</a>
+                <a href="projects">About</a>
+                <a href="projects">Projects</a>
+                <a href="projects">Blog</a>
+                <a href="projects">Contact</a>
+                <button className = "nav-btn nav-close-btn" onClick={showNavBar}>
+                    <FaTimes/>
+                </button>
             </nav>
-        </div>
+            <button className = "nav-btn nav-close-btn" onClick={showNavBar}>
+                <FaBars/>
+            </button>
+        </header>
 
         </>
          
