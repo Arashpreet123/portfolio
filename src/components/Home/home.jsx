@@ -6,6 +6,7 @@ import Layout from "../layout/layout";
 import Model from "../Model/model"
 import profile from "../../assets/profile.jpg";
 import useLocalStorage from 'use-local-storage-state'
+import Projects from '../Projects/Projects';
 
 const Home = () => {
     const setDarkMode = () => {
@@ -46,16 +47,17 @@ const Home = () => {
                             
                     </div>
                     <div className='profile'>
-                                <img src = {profile}></img>
+                                <img className = "profileImg"src = {profile}></img>
                     </div>
                 </div>
                 <div className="aboutSection">
+                    <h2 className='subHeading1'>About Me</h2>
                     <p>
                         I am recent graduate from the University of Washington class of 2023 B.S. in computer science. My primary interests are
                         software design and development, artificial intelligence, and web development.
                     </p>
                 
-                    <p>
+                    {/* <p>
                         I always knew that I was going to be working with technology. I remember my first time writing code at khan academy in elementary. Which was building a website about a game with HTML. From there onwards I knew I found my passion in programming. 
                         Now as a recent graduate in computer science, I am enthusiastically looking to apply my skills and knowledge to real-world problems.
                     </p>
@@ -63,15 +65,15 @@ const Home = () => {
                         My specialties are being able to quickly learn new skills, problem-solving, Model View Controler, and object-oriented programming (OOP). 
                         The programming languages that I have experience using are Java, Javascript, HTML, Python, and SQL. I'm still eager to learn other programming languages, frameworks, and principles which I can put in my toolbox. 
                         I am excited to join a dynamic team where I can continue to grow and learn while making meaningful contributions to the field of computer science.
-                    </p>
+                    </p> */}
                 </div>
-                <div className ="Projects">
-                    These are my projects
+                <div className ="work">
+                    <h2 className='subHeading'>Projects</h2>
+                    <Projects></Projects>
                 </div>
-                {/* <div className="cube">
-                    <Cube></Cube>
-
-                </div> */}
+                <div>
+                    <h1>Links</h1>
+                </div>
                             </div>
 
         </>

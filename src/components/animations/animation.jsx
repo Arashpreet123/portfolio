@@ -97,7 +97,7 @@ export const preLoaderAnim = () => {
     })
     .to(".preloader", {
       duration: 0,
-      css: { display: "none" },
+      css: { display: "none" , overflowY:"scroll"},
     });
 };
 

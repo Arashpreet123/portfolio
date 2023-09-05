@@ -1,6 +1,7 @@
 import './navBar.scss';
 import {FaBars, FaTimes} from "react-icons/fa"
 import { useRef } from 'react';
+import logo from "../../assets/logo.png"
 const NavBar = () => {
     const navRef = useRef();
     const showNavBar = () => {
@@ -9,7 +10,9 @@ const NavBar = () => {
     return (
         <>
         <header>
-            <h3>LOGO</h3>
+            <div className='logo'>
+                <img src={logo}></img>
+            </div>
             <nav className="navBar" ref = {navRef}>                   
                 <a href="projects">Home</a>
                 <a href="projects">About</a>

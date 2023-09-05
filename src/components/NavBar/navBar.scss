@@ -14,15 +14,31 @@
 }
 
 header {
+	z-index: 45;
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
 	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
 }
+.logo {
+	width: 10%;
+	
+	img {
+	  width: 100%; /* Set the image width to 100% of its container */
+	  height: auto; /* Maintain the aspect ratio */
+	  border-radius: 20px;
 
+	}
+  }
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
