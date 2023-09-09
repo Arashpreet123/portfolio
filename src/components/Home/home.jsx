@@ -7,7 +7,8 @@ import Model from "../Model/model"
 import profile from "../../assets/profile.jpg";
 import useLocalStorage from 'use-local-storage-state'
 import Projects from '../Projects/Projects';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 const Home = () => {
     const setDarkMode = () => {
         document.querySelector("body").setAttribute('data-theme', 'dark')
@@ -17,7 +18,6 @@ const Home = () => {
     }
     
     setLightMode();
-    
     return (
         <>          
         <div className="homePage">
@@ -73,6 +73,16 @@ const Home = () => {
                 </div>
                 <div>
                     <h1>Links</h1>
+                    <div className='links'>
+                        <a href="https://www.linkedin.com/in/arashpreet-pandher-5a6295222/">
+                        <FontAwesomeIcon icon={faLinkedin} size="2x" color="white" className="social-icon" />
+                        </a>
+                        <a href="https://github.com/Arashpreet123">
+                        <FontAwesomeIcon icon={faGithub} size="2x" color="white" className="social-icon" />
+                        </a>
+                        
+                    </div>
+                    
                 </div>
                             </div>
 
