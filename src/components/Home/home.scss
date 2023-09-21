@@ -3,7 +3,10 @@
     padding: 0px;
 }
 
-
+@font-face {
+    font-family: gameFont;
+    src: url(../../assets/gameFont.ttf);
+}
 .homePage{
     position: absolute;
     width: 100%;
@@ -12,6 +15,7 @@
     color: white;
     align-items: center;
     justify-content: center;
+    
     
     // border: 5px SOLID WHITE;
     
@@ -67,7 +71,19 @@
 }
 .links{
     display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10px;
 }
+.Link{
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    text-decoration: underline gray;
+
+}
+
 .social-icon{
     padding: 10px;
 }

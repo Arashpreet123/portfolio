@@ -11,6 +11,7 @@ function App() {
     <>
      <PreLoader></PreLoader>
      <Home></Home>
+     
      {/* <NavBar></NavBar> */}
      {/* <Model></Model> */}
 

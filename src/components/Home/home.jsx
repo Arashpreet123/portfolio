@@ -9,6 +9,7 @@ import useLocalStorage from 'use-local-storage-state'
 import Projects from '../Projects/Projects';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Contact from "../Contact/contact";
 const Home = () => {
     const setDarkMode = () => {
         document.querySelector("body").setAttribute('data-theme', 'dark')
@@ -53,8 +54,19 @@ const Home = () => {
                 <div className="aboutSection">
                     <h2 className='subHeading1'>About Me</h2>
                     <p>
-                        I am recent graduate from the University of Washington class of 2023 B.S. in computer science. My primary interests are
-                        software design and development, artificial intelligence, and web development.
+                    I'm Arashpreet S. Pandher, an enthusiast who fell in love with coding at an early age. Back in the 4th grade, I built my first website in HTML/CSS on Khan Academy, dedicated to the lore of the legendary game "The Legend of Zelda." Little did I know that I was already coding back then, and I found the process incredibly fun.
+
+My fascination with creating websites, complete with animations, continued to grow. 
+                    </p>
+                    <p>
+                    After a brief hiatus, I rediscovered my passion for coding in college when I realized that I had been programming as a kid. It was during those university years that I decided to pursue coding as my career.
+
+I embarked on a journey of self-learning, diving into various coding projects. With every passing month, I became more convinced that software development was my calling. As I honed my skills and tackled solo projects, I knew I was on the right path.
+
+In university, I acquired a diverse set of skills, and in my senior year, I began working at Shoperies, where I further refined my abilities. Collaborating with my mentor at Shoperies elevated my standards as a developer, and I continued to learn and grow.
+                    </p>
+                    <p>
+                    Today, I'm actively seeking a full-time role where I can leverage my coding expertise and business acumen to contribute to a company's success. My journey has equipped me with a unique blend of technical skills and a deep understanding of how technology can drive business objectives. I'm excited to apply these skills to help companies achieve their goals.
                     </p>
                 
                     {/* <p>
@@ -71,7 +83,7 @@ const Home = () => {
                     <h2 className='subHeading'>Projects</h2>
                     <Projects></Projects>
                 </div>
-                <div>
+                <div className='Link'>
                     <h1>Links</h1>
                     <div className='links'>
                         <a href="https://www.linkedin.com/in/arashpreet-pandher-5a6295222/">
@@ -84,7 +96,8 @@ const Home = () => {
                     </div>
                     
                 </div>
-                            </div>
+                    <Contact></Contact>
+                </div>
 
         </>
          
