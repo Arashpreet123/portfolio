@@ -21,7 +21,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/send-email", formData);
+      await axios.post("http://localhost:5174/send-email", formData);
       console.log("Form Data Submitted:", formData);
       // Clear the form after submission
       setFormData(initialFormData); // Reset the form data to its initial state

@@ -2,9 +2,13 @@
 const express = require("express"); // Use require, not import
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+const cors = require('cors');
+
 
 const app = express(); // Use const app = express();, not import app from express();
-const port = process.env.PORT || 5000;
+// const port = process.env.PORT || 5174;
+
+app.use(cors()); 
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -13,7 +17,7 @@ app.use(bodyParser.json());
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "",
+    user: "pandherarashpreet@gmail.com",
     pass: "",
   },
 });
@@ -42,7 +46,12 @@ app.post("/send-email", (req, res) => {
   });
 });
 
+
+app.get("/send-email",  (req, res) => {
+  res.send("hello");
+})
+
 // Start the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(5174, () => {
+  console.log(`Server is running on port ${5174}`);
 });
