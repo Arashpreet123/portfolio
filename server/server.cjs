@@ -18,13 +18,14 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "pandherarashpreet@gmail.com",
-    pass: "",
+    pass: "cscx urde jjgd wqrm",
   },
 });
 
 // Define a route to handle form submissions
 app.post("/send-email", (req, res) => {
   const { name, email, message } = req.body;
+  console.log(name);
 
   // Create email content
   const mailOptions = {
