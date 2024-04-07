@@ -1,0 +1,42 @@
+.contact{
+    width: 50%;
+    margin-top: 20px;
+
+}
+.form-group {
+    margin-top: 20px;
+    label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    }
+
+    input,
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+
+    textarea {
+    height: 150px; // Adjust the height as needed
+    }
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; // Change to your desired button color
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+    background-color: #0056b3; // Change to your desired hover color
+    }
+}
